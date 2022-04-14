@@ -6,7 +6,7 @@
 ## Configuration 
 
 ```
-docker run -it --rm -p 8888:8888 -v <your_local_path>:/home/jovyan/work jupyter/pyspark-notebook
+docker run -itd -p 8888:8888 -v /home/hunglv/Downloads/Server_Beauty:/home/jovyan jupyter/pyspark-notebook
 ```
 
 Testing code 
