@@ -21,8 +21,8 @@ rdd.takeSample(False, 5)
 
 
 ## Pyspark and Elastic Search
-
-Mismatch version 
+Be careful when installing the Spark 
+Requirements 
 * Java version: 8 
 * Elastic search: 7.6.2 
 * Spark version: 2.4.5
