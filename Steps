@@ -1,0 +1,37 @@
+
+## Requirements
+ *Java version 7
+
+## Steps 
+1. Create the virtual conda environment
+
+```bash
+conda create -n py37 python=3.7
+```
+
+2. Activate environment
+```bash
+conda activate py37
+```
+
+3. Install some packages 
+```
+pip install pandas
+pip install 'elasticsearch<7.14.0'
+pip install noteboook
+```
+
+4. Run the spark + 
+```bash
+PYSPARK_DRIVER_PYTHON="jupyter" PYSPARK_DRIVER_PYTHON_OPTS="notebook --no-browser --port=8888 --ip=0.0.0.0" /data_vol/erv-hunglv/spark_docker/spark-2.4.5-bin-hadoop2.7/bin/pyspark --driver-memory 4g --driver-class-path /data_vol/erv-hunglv/spark_docker/elasticsearch-hadoop-7.6.2/dist/elasticsearch-spark-20_2.11-7.6.2.jar
+```
+
+5. Run the Elastic Search 
+```bash
+docker-compose up -d elasticsearch
+```
+
+6. Check the elasticsearch 
+The elasticsearch node is running at port 9200. 
+http://localhost:9200
+
