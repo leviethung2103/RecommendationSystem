@@ -32,3 +32,20 @@ Run the command to run the jupyter notebook:
 ```bash
 PYSPARK_DRIVER_PYTHON="jupyter" PYSPARK_DRIVER_PYTHON_OPTS="notebook" /home/hunglv/Downloads/Server_Beauty/spark-docker/spark-2.4.5-bin-hadoop2.7/bin/pyspark --driver-memory 4g --driver-class-path /home/hunglv/Downloads/Server_Beauty/spark-docker/elasticsearch-hadoop-7.6.2/dist/elasticsearch-spark-20_2.11-7.6.2.jar
 ```
+## Install Java 
+The Spark version 2.4 requires the Java version 8. 
+
+Check the version of Java
+```
+java -version
+```bash
+
+```
+sudo apt install openjdk-8-jdk
+```
+
+Update the default java environment 
+Ref: https://computingforgeeks.com/how-to-set-default-java-version-on-ubuntu-debian/
+```bash
+sudo update-java-alternatives --list
+```
