@@ -36,11 +36,11 @@ PYSPARK_DRIVER_PYTHON="jupyter" PYSPARK_DRIVER_PYTHON_OPTS="notebook" /home/hung
 The Spark version 2.4 requires the Java version 8. 
 
 Check the version of Java
-```
-java -version
 ```bash
-
+java -version
 ```
+
+```bash
 sudo apt install openjdk-8-jdk
 ```
 
