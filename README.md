@@ -32,6 +32,11 @@ Run the command to run the jupyter notebook:
 ```bash
 PYSPARK_DRIVER_PYTHON="jupyter" PYSPARK_DRIVER_PYTHON_OPTS="notebook" /home/hunglv/Downloads/Server_Beauty/spark-docker/spark-2.4.5-bin-hadoop2.7/bin/pyspark --driver-memory 4g --driver-class-path /home/hunglv/Downloads/Server_Beauty/spark-docker/elasticsearch-hadoop-7.6.2/dist/elasticsearch-spark-20_2.11-7.6.2.jar
 ```
+Run the notebook with public IP 
+```bash
+PYSPARK_DRIVER_PYTHON="jupyter" PYSPARK_DRIVER_PYTHON_OPTS="notebook --no-browser --port=8889 --ip=0.0.0.0" /data_vol/erv-hunglv/spark_docker/spark-2.4.5-bin-hadoop2.7/bin/pyspark --driver-memory 4g --driver-class-path /data_vol/erv-hunglv/spark_docker/elasticsearch-hadoop-7.6.2/dist/elasticsearch-spark-20_2.11-7.6.2.jar
+```
+
 ## Install Java 
 The Spark version 2.4 requires the Java version 8. 
 
